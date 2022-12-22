@@ -1,0 +1,49 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 10-27-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card>
+        <div slot="title">
+            <h3>
+                <lightning-icon icon-name="standard:contact" size="small"></lightning-icon>Clarusway Student Survey
+                </h3>
+            </div>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+                <div class="slds-form-element">
+                <lightning-input label="First Name" value={firstName} onchange={contactChangeVal}></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+            <div class="slds-form-element">
+                <lightning-input label="Last Name" value={lastName} onchange={contactChangeVal}></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+            <div class="slds-form-element">
+                <lightning-input label="Mobile" value={mobile} onchange={contactChangeVal}></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+            <div class="slds-form-element">
+                <lightning-input label="Email" value={emailId} onchange={contactChangeVal} ></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+            <div class="slds-form-element">
+                <lightning-input label="How do you think about Clarusway Salesforce Course?"
+                     value={surveyVal} onchange={contactChangeVal}></lightning-input>
+                </div>
+            </div>
+            <div class="slds-p-horizontal--small slds-col slds-size_6-of-12 slds-m-bottom--medium">
+            <div class="slds-form-element slds-p-top_large ">
+                <lightning-button label="Submit Survey" variant="brand" onclick={insertContactAction}></lightning-button>
+            </div>
+            </div>
+        </div>
+    </lightning-card>
+    </template>
